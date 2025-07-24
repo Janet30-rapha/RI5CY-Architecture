@@ -1,26 +1,4 @@
-// Copyright 2017 ETH Zurich and University of Bologna.
-// Copyright and related rights are licensed under the Solderpad Hardware
-// License, Version 0.51 (the “License”); you may not use this file except in
-// compliance with the License.  You may obtain a copy of the License at
-// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
-// or agreed to in writing, software, hardware and materials distributed under
-// this License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR
-// CONDITIONS OF ANY KIND, either express or implied. See the License for the
-// specific language governing permissions and limitations under the License.
 
-////////////////////////////////////////////////////////////////////////////////
-// Engineer:       Michael Gautschi - gautschi@iis.ee.ethz.ch                 //
-//                                                                            //
-// Design Name:    hwloop controller                                          //
-// Project Name:   RI5CY                                                      //
-// Language:       SystemVerilog                                              //
-//                                                                            //
-// Description:    Hardware loop controller unit. This unit is responsible to //
-//                 handle hardware loops. Tasks are:                          //
-//                 a) compare PC to all stored end addresses                  //
-//                 b) jump to the right start address if counter =/ 0         //
-//                                                                            //
-////////////////////////////////////////////////////////////////////////////////
 
 module riscv_hwloop_controller
 #(
